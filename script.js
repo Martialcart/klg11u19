@@ -18,5 +18,11 @@ addButton.addEventListener('click', function () {
     deleteItem.textContent ="Slett";
     todoItem.appendChild(deleteItem);
 
+    const doneItem = document.createElement("button");
+    doneItem.textContent ="ferdig";
+    todoItem.appendChild(doneItem);
+
+   
+
     console.log(`trykket på addButton`);
 });
