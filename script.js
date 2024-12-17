@@ -42,7 +42,7 @@ addButton.addEventListener('click', function () {
     deleteItem.textContent ="Slett";//gir sletteknappen navnet "slett"
     todoItem.appendChild(deleteItem);//setter sletteknappen på todo-itemet
 
-    //setter opp lytting etter klikk på sletteknapp, som påfølges avn en funksjon som skal utføres
+    //setter opp lytting etter klikk på sletteknapp, som påfølges av en funksjon som skal utføres
     deleteItem.addEventListener('click', function () {
         console.log("trykket på slett");
         if(todoItem.classList.contains("done")) {//fjern todoitem om det er utført
