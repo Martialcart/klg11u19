@@ -45,11 +45,11 @@ addButton.addEventListener('click', function () {
     //setter opp lytting etter klikk på sletteknapp, som påfølges av en funksjon som skal utføres
     deleteItem.addEventListener('click', function () {
         console.log("trykket på slett");
-        if(todoItem.classList.contains("done")) {//fjern todoitem om det er utført
-            todoItem.remove();
+	if(todoItem.classList.contains("done")) {//if sjekker om todoitem har klassen for at todoItem er utført
+            todoItem.remove();//fjerner / sletter todoitem fra websiden
         } else {
-            alert("Gjøremål må være ferdig før et kan slettes");//gi en advarsel om oppgaven ikke er utført, istedenfor å slette
-        }
+            alert("Gjøremål må være ferdig før et kan slettes");//om todoitem ikke had klassen for utført, gi en advarsel om oppgaven ikke er utført
+	}
     });  
 
 });
